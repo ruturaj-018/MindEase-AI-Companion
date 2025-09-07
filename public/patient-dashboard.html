@@ -2,26 +2,42 @@
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
+
+    <!-- FAVICONS -->
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+<!-- iOS home screen icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- (Optional but nice) PWA manifest -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- (Optional) Tab color on mobile browsers -->
+<meta name="theme-color" content="#101728">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMaze - Patient Dashboard</title>
+    <title>MindEase - Patient Dashboard</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container-fluid px-4">
-            <!-- MindMaze Logo -->
+            <!-- MindEase Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <div class="logo-container me-3">
-                    <img src="/assets/logo.png" alt="MindMaze Brain Logo" width="40" height="40" class="logo-img">
+                    <img src="assets/logo.png" alt="MindEase Brain Logo" width="40" height="40" class="logo-img">
                 </div>
-                <span class="brand-text">MindMaze</span>
+                <span class="brand-text">MindEase</span>
             </a>
 
             <!-- Mobile Toggle -->
@@ -36,10 +52,10 @@
                         <a class="nav-link active" href="#"><i class="fas fa-chart-line me-2"></i>Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-comments me-2"></i>Chat</a>
+                        <a class="nav-link" href="chat.html"><i class="fas fa-comments me-2"></i>Chat</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-book-open me-2"></i>Resources</a>
+                        <a class="nav-link" href="resource.html"><i class="fas fa-book-open me-2"></i>Resources</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -71,7 +87,7 @@
                 </div>
             </div>
 
-            <!-- Mindmaze Mood Tracker -->
+            <!-- MindEase Mood Tracker -->
             <div class="row mb-4">
                 <div class="col-12">
                     <div class="card mood-tracker-card">
@@ -79,7 +95,7 @@
                             <div class="row align-items-center">
                                 <div class="col-md-8">
                                     <h5 class="card-title mb-2">
-                                        🧠 Mindmaze Mood Tracker
+                                        🧠 MindEase Mood Tracker
                                     </h5>
                                     <div class="mood-tracker-status">
                                         <div class="status-dot" id="moodTrackerDot"></div>
@@ -691,7 +707,7 @@
         <div class="container-fluid px-4">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2024 MindMaze. Supporting your mental wellness journey.</p>
+                    <p>&copy; 2024 MindEase. Supporting your mental wellness journey.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="#" class="footer-link">Privacy Policy</a> |
@@ -729,8 +745,8 @@
     </script>
     
     <!-- Firebase SDK -->
-    <script type="module" src="firebase-config.js"></script>
-    <script type="module" src="dashboard.js"></script>
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
     
     <!-- Fix for journal prompt loading -->
     <script>

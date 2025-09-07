@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- FAVICONS -->
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+<!-- iOS home screen icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- (Optional but nice) PWA manifest -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- (Optional) Tab color on mobile browsers -->
+<meta name="theme-color" content="#101728">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - MindEase</title>
+    <link rel="stylesheet" href="css/resource.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <!-- Navigation Header (matching chat) -->
+    <nav class="chat-navbar">
+        <div class="nav-left">
+            <div class="logo-section">
+                <img src="assets/logo.png" alt="MindEase logo" class="brand-logo">
+                <span class="brand-text">MindEase</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="user-profile-badge">
+                <div class="profile-circle">
+                    <svg class="profile-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </div>
+                <div class="profile-info">
+                    <span class="user-name-bold" id="patientName">Loading...</span>
+                    <span class="user-subtext">Patient</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Greeting (top) -->
+    <section id="greetingBar" class="greeting-bar" aria-live="polite">
+        <p><span id="greetName">Hello</span>, your stress level is <strong id="greetStress">--%</strong>. Based on this, we suggest the videos below.</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-container page-stack">
+        <!-- Suggestions Card -->
+        <div class="suggestions-card section-suggestions">
+            <h2 class="suggestions-title">Suggestions</h2>
+            <div class="suggestions-status" id="suggestionsStatus">Loading personalized suggestions...</div>
+            <div class="video-grid" id="videoGrid"></div>
+        </div>
+
+        <!-- Crisis Support Strip -->
+        <div class="crisis-support section-crisis" role="banner" aria-label="Crisis support information">
+            <div class="crisis-container">
+                <h2 class="crisis-title">🚨 Crisis Support</h2>
+                <p class="crisis-message">If you're feeling unsafe, please reach out immediately.</p>
+                <div class="crisis-buttons">
+                    <a href="tel:9152987821" class="crisis-btn" aria-label="Call India crisis helpline at 9152987821">
+                        India: 9152987821
+                    </a>
+                    <a href="tel:988" class="crisis-btn" aria-label="Call USA Suicide & Crisis Lifeline at 988">
+                        USA: 988 (Suicide & Crisis Lifeline)
+                    </a>
+                    <a href="tel:116123" class="crisis-btn" aria-label="Call UK Samaritans at 116123">
+                        UK: 116 123 (Samaritans)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (matching chat) -->
+    <footer class="chat-footer">
+        <p>&copy; 2024 MindEase. Supporting your mental wellness journey.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Support</a>
+        </p>
+    </footer>
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="window.location.href='patient-dashboard.html'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+    </button>
+
+    <!-- Video Modal -->
+    <div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display: none;">
+        <div class="modal-content" role="document">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Video</h3>
+                <button class="modal-close" id="modalClose" aria-label="Close video modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-video-container">
+                <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/resource.js"></script>
+</body>
+</html>

@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- FAVICONS -->
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+<!-- iOS home screen icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- (Optional but nice) PWA manifest -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- (Optional) Tab color on mobile browsers -->
+<meta name="theme-color" content="#101728">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindEase - Your Mental Health Companion</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -432,6 +447,39 @@
             0% { left: -100%; }
             100% { left: 100%; }
         }
+
+        /* Floating Back button — matches login theme */
+.back-fab {
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  bottom: auto;
+  z-index: 100; /* above main container */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--primary-soft) 0%, var(--primary-light) 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 12px 22px rgba(0,0,0,.22);
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.back-fab:hover { transform: translateY(-2px); box-shadow: 0 16px 28px rgba(0,0,0,.28); }
+.back-fab:active { transform: translateY(0); box-shadow: 0 8px 16px rgba(0,0,0,.18); }
+.back-fab:focus-visible { outline: 3px solid rgba(255,255,255,.6); outline-offset: 2px; }
+
+.back-fab .icon {
+  width: 38px; height: 24px; display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .back-fab span { display: none; } /* icon-only on very small screens */
+}
+
     </style>
 </head>
 <body>
@@ -1029,6 +1077,14 @@
                 // redirectToDashboard();
             }
         });
+
     </script>
+
+
+<a id="backBtn" class="back-fab" href="index.html" aria-label="Back to Home">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
 </body>
 </html>

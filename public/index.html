@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A friendly wellness companion that listens, suggests, and supports—right when you need it. Feel calmer in minutes with MindEase.">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- FAVICONS -->
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+<!-- iOS home screen icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- (Optional but nice) PWA manifest -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- (Optional) Tab color on mobile browsers -->
+<meta name="theme-color" content="#101728">
+
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MindEase — Feel calmer in minutes.">
+    <meta property="og:description" content="A friendly wellness companion that listens, suggests, and supports—right when you need it.">
+    <meta property="og:image" content="/assets/logo.png">
+    <meta property="og:type" content="website">
+    
+    <title>MindEase — Feel calmer in minutes.</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <div class="navbar-content">
+            <div class="navbar-brand">
+                <img src="/assets/logo.png" alt="MindEase Logo" class="logo">
+                <span class="brand-text">MindEase</span>
+            </div>
+            <nav class="navbar-nav" role="navigation">
+                <a href="#about" class="nav-link" data-nav="about">About</a>
+                <a href="#resources" class="nav-link" data-nav="resources">Resources</a>
+                <a href="#support" class="nav-link" data-nav="support">Support</a>
+                <div class="nav-ctas">
+                    <a href="/Login-Signup.html" class="btn btn-primary" id="signup-btn">Sign up</a>
+                    <a href="/Login-Signup.html" class="btn btn-secondary" id="login-btn">Log in</a>
+                    <div class="user-chip hidden" id="user-chip">
+                        <span id="user-name">User</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-background hero-gradient"></div>
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title" data-animate>Calm, clarity, and support — tailored to you.</h1>
+                <p class="hero-subtext" data-animate>A friendly wellness companion that listens, suggests, and supports—right when you need it.</p>
+                <a href="/Login-Signup.html" class="btn btn-primary hero-cta" data-animate>Get Started</a>
+            </div>
+            <div class="floating-particles" aria-hidden="true"></div>
+        </section>
+
+        <!-- How MindEase Helps -->
+        <section class="steps-section" aria-labelledby="steps-title">
+            <div class="container">
+                <h2 id="steps-title">How MindEase Helps</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon">💬</div>
+                        <h3>Share how you feel</h3>
+                        <p>Open up through empathetic chat that truly listens</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">📊</div>
+                        <h3>Track your mood</h3>
+                        <p>Quick, private tracking that reveals patterns over time</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">🎯</div>
+                        <h3>Get tailored tools</h3>
+                        <p>Breathing exercises, mindfulness, and helpful videos just for you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Highlights -->
+        <section class="features-section" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title">Feature Highlights</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Friendly AI Chat</h3>
+                        <p>Compassionate conversations that adapt to your needs</p>
+                        <a href="#" class="feature-link">Learn more</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Mood Tracker</h3>
+                        <p>Visual insights into your emotional patterns and progress</p>
+                        <a href="#" class="feature-link">Learn more</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>Smart Suggestions</h3>
+                        <p>Personalized recommendations based on your unique journey</p>
+                        <a href="#" class="feature-link">Learn more</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">☀️</div>
+                        <h3>Daily Tips</h3>
+                        <p>Bite-sized wellness wisdom delivered when you need it most</p>
+                        <a href="#" class="feature-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy & Trust -->
+        <section class="privacy-section" aria-labelledby="privacy-title">
+            <div class="container">
+                <h2 id="privacy-title">Privacy & Trust</h2>
+                <div class="privacy-grid">
+                    <div class="privacy-item">
+                        <div class="privacy-icon">🔒</div>
+                        <p>Private by design</p>
+                    </div>
+                    <div class="privacy-item">
+                        <div class="privacy-icon">✋</div>
+                        <p>You decide what to share</p>
+                    </div>
+                    <div class="privacy-item">
+                        <div class="privacy-icon">🗑️</div>
+                        <p>Delete your data anytime</p>
+                    </div>
+                </div>
+                <p class="privacy-link">
+                    <a href="#" class="link">Privacy Policy</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title" data-animate>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item" data-animate>
+                        <button class="faq-button" aria-expanded="false" aria-controls="faq-1">
+                            <span>Do I need my camera for mood tracking?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-panel" id="faq-1">
+                            <p>No, MindEase mood tracking is entirely text-based. We don't require or use camera access at any point in the tracking process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-animate>
+                        <button class="faq-button" aria-expanded="false" aria-controls="faq-2">
+                            <span>How does MindEase personalize suggestions?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-panel" id="faq-2">
+                            <p>Our AI analyzes your mood patterns, conversation topics, and stated preferences to recommend tailored breathing exercises, mindfulness content, and coping strategies that fit your unique needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-animate>
+                        <button class="faq-button" aria-expanded="false" aria-controls="faq-3">
+                            <span>Can I use MindEase without creating an account?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-panel" id="faq-3">
+                            <p>You can explore some basic features, but creating an account allows us to personalize your experience, track your progress, and provide more meaningful support over time.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-animate>
+                        <button class="faq-button" aria-expanded="false" aria-controls="faq-4">
+                            <span>Is MindEase a replacement for professional therapy?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-panel" id="faq-4">
+                            <p>MindEase is a wellness companion, not a replacement for professional therapy. For serious mental health concerns, we recommend consulting with a licensed mental health professional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="info-section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" data-animate>About MindEase</h2>
+                <p class="section-intro" data-animate>MindEase combines AI-powered conversations with evidence-based wellness techniques to provide personalized mental health support. Our mission is to make mental wellness accessible, private, and effective for everyone.</p>
+                <div class="info-grid">
+                    <div class="info-card" data-animate>
+                        <h3>AI-Powered Support</h3>
+                        <p>Compassionate conversations that adapt to your emotional state</p>
+                    </div>
+                    <div class="info-card" data-animate>
+                        <h3>Evidence-Based</h3>
+                        <p>Techniques rooted in cognitive behavioral therapy and mindfulness</p>
+                    </div>
+                    <div class="info-card" data-animate>
+                        <h3>Privacy First</h3>
+                        <p>Your conversations and data remain completely confidential</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="info-section" id="resources" aria-labelledby="resources-title">
+            <div class="container">
+                <h2 id="resources-title" data-animate>Resources</h2>
+                <p class="section-intro" data-animate>Discover a curated collection of wellness tools designed to support your mental health journey.</p>
+                <div class="resources-grid">
+                    <div class="resource-item" data-animate>
+                        <div class="resource-icon">🎥</div>
+                        <h3>Guided Videos</h3>
+                        <p>Calming meditation and mindfulness exercises</p>
+                    </div>
+                    <div class="resource-item" data-animate>
+                        <div class="resource-icon">🫁</div>
+                        <h3>Breathing Exercises</h3>
+                        <p>Science-backed techniques for instant stress relief</p>
+                    </div>
+                    <div class="resource-item" data-animate>
+                        <div class="resource-icon">📝</div>
+                        <h3>Journaling Prompts</h3>
+                        <p>Thoughtful questions to explore your emotions</p>
+                    </div>
+                    <div class="resource-item" data-animate>
+                        <div class="resource-icon">🎧</div>
+                        <h3>Audio Content</h3>
+                        <p>Soothing soundscapes and guided meditations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="info-section" id="support" aria-labelledby="support-title">
+            <div class="container">
+                <h2 id="support-title" data-animate>Support</h2>
+                <p class="section-intro" data-animate>We're here to help you get the most out of your MindEase experience.</p>
+                <div class="support-grid">
+                    <div class="support-card" data-animate>
+                        <h3>Help Center</h3>
+                        <p>Find answers to common questions and learn how to use all features</p>
+                        <a href="#" class="support-link">Visit Help Center</a>
+                    </div>
+                    <div class="support-card" data-animate>
+                        <h3>Contact Support</h3>
+                        <p>Get personalized assistance from our support team</p>
+                        <a href="#" class="support-link">Contact Us</a>
+                    </div>
+                    <div class="support-card" data-animate>
+                        <h3>Community</h3>
+                        <p>Connect with others on their wellness journey</p>
+                        <a href="#" class="support-link">Join Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback-section" aria-labelledby="feedback-title">
+            <div class="container">
+                <div class="feedback-card" data-animate>
+                    <h2 id="feedback-title">Share Your Feedback</h2>
+                    <p>Help us improve MindEase with your thoughts and suggestions.</p>
+                    <form id="feedbackForm" class="feedback-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="feedbackName">Name (optional)</label>
+                                <input type="text" id="feedbackName" name="name" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackEmail">Email (optional)</label>
+                                <input type="email" id="feedbackEmail" name="email" class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackMessage">Message *</label>
+                            <textarea id="feedbackMessage" name="message" class="form-textarea" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary feedback-submit">
+                            <span class="submit-text">Send Feedback</span>
+                            <span class="submit-loading">Sending...</span>
+                            <span class="submit-success">✓ Sent</span>
+                        </button>
+                    </form>
+                    <div id="feedbackStatus" role="status" aria-live="polite" class="feedback-status" hidden></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 MindEase. Supporting your mental wellness journey.</p>
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <span>|</span>
+                <a href="#" class="footer-link">Support</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- <script type="module" src="./firebase-config.js"></script> -->
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>

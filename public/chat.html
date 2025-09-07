@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- FAVICONS -->
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+<!-- iOS home screen icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- (Optional but nice) PWA manifest -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- (Optional) Tab color on mobile browsers -->
+<meta name="theme-color" content="#101728">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMaze Chat</title>
-    <link rel="stylesheet" href="chat.css">
+    <title>MindEase Chat</title>
+    <link rel="stylesheet" href="css/chat.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -13,8 +28,8 @@
     <nav class="chat-navbar">
         <div class="nav-left">
             <div class="logo-section">
-                <img src="/assets/logo.png" alt="MindMaze" class="navbar-logo">
-                <span class="brand-text">MindMaze</span>
+                <img src="assets/logo.png" alt="MindEase" class="navbar-logo">
+                <span class="brand-text">MindEase</span>
             </div>
         </div>
         <div class="nav-right">
@@ -115,7 +130,7 @@
 
     <!-- Footer -->
     <footer class="chat-footer">
-        <p>&copy; 2024 MindMaze. Supporting your mental wellness journey.</p>
+        <p>&copy; 2024 MindEase. Supporting your mental wellness journey.</p>
         <p>
             <a href="#">Privacy Policy</a> | 
             <a href="#">Terms of Service</a> | 
@@ -126,10 +141,10 @@
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner"></div>
-        <p>Connecting to MindMaze...</p>
+        <p>Connecting to MindEase...</p>
     </div>
 
     <!-- Firebase SDKs -->
-    <script type="module" src="chat.js"></script>
+    <script type="module" src="js/chat.js"></script>
 </body>
 </html>
